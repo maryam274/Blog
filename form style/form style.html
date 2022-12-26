@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Style</title>
+        <meta charset="UTF-8"  name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <style>
+            body{
+                margin: 0 auto;
+                text-align: center;
+                background-image: url(form\ background.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .in{
+                width: 90%;
+                padding: 5px;
+                margin: 10px;
+                margin-top: 5px;
+                font-size: 15px;
+            }
+            .form{
+                text-align: left;
+                background-color: rgba(249, 148, 148, 0.573);
+                padding: 20px;
+                float: left;
+                width: 49%;
+                opacity: 0.9;
+                height: 585px;
+            }
+            .fav{
+                float: left;
+                text-align: left;
+                font-size: 23px;
+                color: rgb(0, 0, 0);
+                font-weight: 900;
+                width: 45%;
+                padding: 15px;
+                text-shadow: 1px 2px rgb(145, 127, 127);
+            }
+            #but{
+                background-color: rgb(255, 128, 128);
+                width: 44%;
+                font-size: 25px;
+                color: rgb(14, 14, 14);
+                border: none;
+                border-radius: 10px;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.426);
+                position:absolute;
+                
+            }
+            #but:hover{
+                text-decoration: underline;
+            }
+            
+            @media (max-width: 1150px){
+                .form{
+                    width: 100%;
+                }
+                .fav{
+                    width: 100%;
+                }
+                #but {
+                     
+                     margin-left: 150px;
+                     
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form class="form">
+                <b>UserName:</b><br>
+                <input type="text" placeholder="username" class="in" required><br>
+                <b>Email:</b><br>
+                <input type="email" placeholder="Email_Example@gmail.com" class="in" required><br>
+                <b>Password:</b><br>
+                <input type="password" placeholder="*******" minlength="6" maxlength="12" class="in" required><br>
+                <b>Birthdate:</b><br>
+                <input type="date" min="1970-1-1" max="2022-12-31" class="in" required><br>
+                <b>Age:</b><br>
+                <input type="number" min="12" max="90" class="in" placeholder="20 years old" required><br>
+                <b>Gender:</b><br>
+                <input type="radio" name="gender" style="margin: 15px;" required>Male
+                <input type="radio" name="gender" style="margin: 15px;">Female<br>
+                <b>Select your country:</b><br>
+                <select name="countries" class="in">
+                    <option>Korea</option>
+                    <option>Egypt</option>
+                    <option>USA</option>
+                    <option>Japan</option>
+                    <option>Germany</option>
+                    <option>Italia</option>
+                    <option>China</option>
+                    <option>Paris</option>
+                    <option>Indonasia</option>
+                    <option>NewYork</option>
+
+                </select>
+                <br>
+                <b>The range of speaking English:</b><br>
+                <input type="radio" name="range" style="margin: 15px;" required>Beginner
+                <input type="radio" name="range" style="margin: 15px;" required>Intermediate
+                <input type="radio" name="range" style="margin: 15px;" required>Advanced
+                <input type="radio" name="range" style="margin: 15px;" required>professional
+                <br>
+                <b>Favorite Color:</b>
+                <input type="color" value="#e66465" style="margin: 15px; width: 47%;"><br><br> 
+                <input type="button" value="submit" id="but">
+            </form>
+        </div>
+        <div class="fav">
+            <center><h3><b>Your Favorite Programmig Languages :</b></h3></center>
+            <input type="checkbox" value="l1"><label>HTML</label>
+            <input type="checkbox" value="l2"><label>CSS</label>
+            <input type="checkbox" value="l3"><label>JavaScript</label>
+            <input type="checkbox" value="l4"><label>PHP</label><br>
+            <input type="checkbox" value="l5"><label>C/C++</label>
+            <input type="checkbox" value="l6"><label>C#</label>
+            <input type="checkbox" value="l7"><label>Java</label>
+            <input type="checkbox" value="l8"><label>Python</label><br>
+            <input type="checkbox" value="l9"><label>Ruby</label>
+            <input type="checkbox" value="l10"><label>Dart</label>
+            <input type="checkbox" value="l11"><label>SQL</label>
+            <input type="checkbox" value="l12"><label>Assembly language</label><br>
+            <input type="checkbox" value="l13"><label>Visual Basic</label>
+            <input type="checkbox" value="l14"><label>Swift</label>
+            <input type="checkbox" value="l15"><label>Kotlin</label>
+            <input type="checkbox" value="l16"><label>Matlab</label><br>
+            <input type="checkbox" value="l17"><label>Scale</label>
+            <input type="checkbox" value="l18"><label>Perl</label>
+            <input type="checkbox" value="l19"><label>Rust</label>
+            <input type="checkbox" value="20"><label>Ada</label>
+        </div>
+        <div class="fav">
+        <center><h3><b>Your Favorite Music :</b></h3></center>
+        <input type="checkbox" value="m1"><label>K-Pop music</label><br>
+        <input type="checkbox" value="m2"><label>Rock music</label><br>
+        <input type="checkbox" value="m3"><label>Rhythm and blues</label><br>
+        <input type="checkbox" value="m4"><label>Soul music</label><br>
+        <input type="checkbox" value="m5"><label>Reggae</label><br>
+        <input type="checkbox" value="m6"><label>Country</label><br>
+        <input type="checkbox" value="m7"><label>Funk</label><br>
+        <input type="checkbox" value="m8"><label>Folk music</label><br>
+        <input type="checkbox" value="m9"><label>Middle Eastern music</label><br>
+        <input type="checkbox" value="m10"><label>Jazz</label><br>
+        <input type="checkbox" value="m12"><label>Disco</label><br>
+        <input type="checkbox" value="m11"><label>Music for children</label><br>
+        <input type="checkbox" value="m12"><label>Vocal music</label><br>
+        </div>
+    </body>
+</html>
