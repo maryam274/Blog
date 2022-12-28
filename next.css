@@ -16,45 +16,34 @@ body{
 }
 
 
+
+
 #span{
-    width: 40%;
-    height: 400px;
-    float: right;
-    margin: 10px 25px 20px 20px;
-   
+    width: 48%;
+    height: 500px;
+    float:inline-start;
+    margin: 10px 0px 20px 25px;
     border-radius: 20px;
     background-color: white;
-    box-shadow: 2px 3px 5px 2px rgb(128, 128, 128);
+    box-shadow: 2px 3px 5px 2px grey;
     border: 50px;
+    
 }
 #image{
-    width: 40%;
-    height: 400px;
-    float: left;
-    margin: 10px 0px 20px 20px;
-    padding-left: 25px;
-    padding-right: 25px;
+    width: 48%;
+    height: 500px;
+    float: inline-end;
+    margin: 10px 0px 20px 0;
     border-radius: 20px;
     background-color: white;
-    box-shadow: 2px 3px 5px 2px rgb(128, 128, 128);
+    box-shadow: 2px 3px 5px 2px grey;
     border: 50px;
-}
-
-.linkItem{
-    color: black;
-    font-size: 30px;
-    font-weight: 600px;
-    text-decoration: none;
-    padding: left 0px; ;
-}
-.linkItem:hover{
-    text-decoration: underline;
+    
 }
 
 #prev{
-    float: left; 
+    float: right; 
     margin-top: 20px;
-    margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 50px;
 }
@@ -70,58 +59,53 @@ button{
 button:hover{
     text-decoration: underline;
 }
+.linkItem{
+    color: black;
+    font-size: 30px;
+    font-weight: 600px;
+    text-decoration: none;
+}
+.linkItem:hover{
+    text-decoration: underline;
+}
 @media (max-width: 1160px){
-
-    .h4 {
-        float: right;
+    #header{
+        display: none;
     }
-   /* #prev {
-        float: left; 
-        padding-top: 100px;
-        margin-top: 0px;
-        margin-left: 5%;
-        margin-right: 5%;
-        padding-bottom: 0px;
-       
-
-    }*/
-
-    #span{
-        width: 50%;
-        float: left;
-        margin-left: 50px;
-        margin-right: 50px;
-        padding: 50px 50px;
-        
-    }
-
     #image{
-        width: 50%;
-        float: left;
-        margin-right: 50px;
-        margin-left: 50px;
-        padding: 50px 50px;
-      
+        width: 90%;
+        border: 10px;
     }
-   
+    #span{
+        width: 90%;
+        float: left;
+        margin-left: 0px;
+        border: 10px;
+    }
+    
 }
 @media (max-width: 785px) {
-  
+    #header{
+        display: "Article";
+    }
    
     #image{
-        width: 50%;
+        width: 90%;
         float: none;
         margin: 0 auto;
         position: static;
         margin-top: 30px;
         margin-bottom: 20px;
+        padding-left: 10px;
+    
     }
     #span{
-        width: 50%;
+        float: none;
+        width: 90%;
         float: none;
         margin: 0 auto;
-        float: none;
         margin-bottom: 20px;
+        
     }
     #content{
         width: 90%;
@@ -130,11 +114,7 @@ button:hover{
         margin: 0 auto;
         padding: 0;
     }
-    .linkItem {
-
-        size: 20px;
-    }
-   
+    
 }
 
 
